@@ -1,5 +1,5 @@
 /* Reset styles */
-html,body, body * { 
+html,.login_background, .login_background * { 
     box-sizing: border-box; 
     font-family: 'Open Sans', sans-serif; 
     margin:0;
@@ -9,10 +9,11 @@ html,body, body * {
     /* border:2px solid orange; */
  }
 
- body {
+ .login_background {
     background-image: url(C:/qwe123/HJK/src/images/Hanseok_2.jpg);
     background-size:  cover;
     background-position:center center;
+    background-repeat: no-repeat;
     
   }
   .container {

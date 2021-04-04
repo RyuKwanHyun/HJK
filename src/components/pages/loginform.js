@@ -30,6 +30,8 @@ function Sign_up() {
   }
 
   return (
+    <>
+    <div className = "login_background">
     <div className="login-register-wrapper">
       <div className="nav-buttons">
         <animated.button
@@ -59,6 +61,8 @@ function Sign_up() {
         <a herf="#">Forgot your password</a>
       </animated.div>
     </div>
+    </div>
+    </>
   );
 }
 
