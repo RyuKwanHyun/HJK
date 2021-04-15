@@ -19,7 +19,7 @@
  }
 
  .login_background {
-    background-image: url(C:/qwe123/HJK/src/images/Hanseok_2.jpg);
+    background-image: url('/Hanseok_2.jpg');
     background-size:  cover;
     background-position:center center;
     background-repeat: no-repeat;
