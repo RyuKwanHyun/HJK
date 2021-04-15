@@ -30,6 +30,9 @@ const AccountInformation = () => {
         <div className='CNPassword'>
             <input type='text'></input>
         </div>
+        <div className='Save'>
+        <button id = "SaveBtn" type = "submit">Save</button>
+        </div>
         </div>
     );
 }

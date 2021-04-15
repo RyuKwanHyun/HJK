@@ -6,26 +6,37 @@ const MyAccount = () => {
     return (    
         <div className='MyAccount'>
             <div><h1>My Account</h1></div>
-        <div className='Account Dashboard'>
+
+        <div className='AccountDashboard'>
+            <Link to ="/AccountDashboard">
             <button id = "AccountBtn" type = "submit">Account Dashboard</button>
+            </Link>
         </div>
-        <div className='Account Information'>
+
+        <div className='AccountInformation'>
             <Link to ="/AccountInformation">
             <button id = "AccountBtn" type = "submit">Account Information</button>
             </Link>
         </div>
-        <div className='Address Book'>
+
+        <div className='AddressBook'>
+            <Link to ="/AddressBook">
             <button id = "AccountBtn" type = "submit">Address Book</button>
+            </Link>
         </div>
-        <div className='My Order'>
+
+        <div className='MyOrder'>
             <button id = "AccountBtn" type = "submit">My Order</button>
         </div>
-        <div className='My Wishlist'>
+
+        <div className='MyWishlist'>
             <button id = "AccountBtn" type = "submit">My Wishlist</button>
         </div>
-        <div className='My Saved Cards'>
+
+        <div className='MySavedCards'>
             <button id = "AccountBtn" type = "submit">My Saved Cards</button>
         </div>
+        
         </div>
     );
 }
