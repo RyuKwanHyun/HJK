@@ -1,32 +1,30 @@
 import React from 'react';
-import './SellShirts.css';
 import { Link } from 'react-router-dom';
 
-const AcccountDashboard = () => {
+const MyOrders = () => {
     return (    
-        <div className='AcccountDashboard'>
-            <div><h1>ACCOUNT DASHBOARD</h1></div>
-            <div><h2>Hi, Bro!!!<p>This is where you can check your information.</p></h2></div>
+        <div className='MyOrders'>
+          <div><h1>My Orders</h1></div>
             <div><h3>RECENT ORDERS(최근 주문)</h3></div>
-            <div className='View All'>
+
+          <div className='View All2'>
             <button id = "DashboardBtn" type = "submit">VIEW ALL</button>
-        </div>
+          </div>
 
-        <div className='RecentOders'>
+          <div className='RecentOders2'>
             <p><input type='text'></input></p>
             <p><input type='text'></input></p>
             <p><input type='text'></input></p>
             <p><input type='text'></input></p>
-        </div>
+          </div>
 
-        <div className='Back'>
+          <div className='Back4'>
             <Link to ="/MyAccount">
             <button id = "DashboardBtn" type = "submit">BACK</button>
             </Link>
-         </div>
-
+            </div>
         </div>
-        );
+    );
 }
 
-export default AcccountDashboard;
+export default MyOrders;

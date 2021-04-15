@@ -3,7 +3,8 @@ import './SellShirts.css';
 import { Link } from 'react-router-dom';
 
 const MyAccount = () => {
-    return (    
+    return (   
+        <> 
         <div className='MyAccount'>
             <div><h1>My Account</h1></div>
 
@@ -25,19 +26,30 @@ const MyAccount = () => {
             </Link>
         </div>
 
-        <div className='MyOrder'>
+        <div className='MyOrders'>
+            <Link to ="/MyOrders">
             <button id = "AccountBtn" type = "submit">My Order</button>
+            </Link>
         </div>
 
         <div className='MyWishlist'>
-            <button id = "AccountBtn" type = "submit">My Wishlist</button>
+            <Link to ="/MyWishlist">
+            <button id = "AccountBtn" type = "submit">My Wishlish</button>
+            </Link>
+        </div>
+
+        <div className='MyProductReviews'>
+            <Link to ="/MyProductReviews">   
+            <button id = "AccountBtn" type = "submit">My Product Reviews</button>
+            </Link>
         </div>
 
         <div className='MySavedCards'>
             <button id = "AccountBtn" type = "submit">My Saved Cards</button>
         </div>
-        
+
         </div>
+        </>
     );
 }
 

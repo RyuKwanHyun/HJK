@@ -7,15 +7,18 @@ import Side3 from './components/pages/Side3';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Help from './components/pages/Help';
-import MyAccount from './components/pages/MyAccount';
 import Sign_up from './components/pages/loginform';
 import Marketing from './components/pages/Marketing';
 import Consulting from './components/pages/Consulting';
 import SellShirts from './components/pages/SellShirts';
+import Help from './components/pages/Help';
+import MyAccount from './components/pages/MyAccount';
 import AccountInformation from './components/pages/AccountInformation';
 import AccountDashboard from './components/pages/AccountDashboard';
 import AddressBook from './components/pages/AddressBook';
+import MyOrders from './components/pages/MyOrders';
+import MyWishlist from './components/pages/MyWishlist';
+import MyProductReviews from './components/pages/MyProductReviews';
 
 function App() {
   return (
@@ -37,7 +40,9 @@ function App() {
         <Route path='/AccountInformation' component={AccountInformation} />
         <Route path='/AccountDashboard' component={AccountDashboard} />
         <Route path='/AddressBook' component={AddressBook} />
-        <SellShirts />
+        <Route path='/MyOrders' component={MyOrders} />
+        <Route path='/MyWishlist' component={MyWishlist} />
+        <Route path='/MyProductReviews' component={MyProductReviews} />
       </Switch>
     </Router>
   );
