@@ -72,3 +72,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### ' V1.4 ' Update
 
 //Login / Register Update
+
+### 'V1.5' Category Update
+//Account
+
+### 'V1.6' Sidebar Update
+//Sidebar
