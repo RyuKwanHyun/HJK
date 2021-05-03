@@ -34,7 +34,7 @@ function Navbar() {
            Uniform
           <i class='fab fa-firstdraft' />
             </Link>
-        <div className='menu-icon' onClick={handleClick}>
+        <div className='menu-icons' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
