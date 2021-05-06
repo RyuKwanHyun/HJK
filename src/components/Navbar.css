@@ -14,7 +14,12 @@
   margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 3rem;
+}
+
+.navbar-logo:hover {
+  color : red;
+  transition: 1s;
 }
 
 .fa-firstdraft {
@@ -43,6 +48,7 @@
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
+  font-size: 15pt;
 }
 
 .nav-links:hover {

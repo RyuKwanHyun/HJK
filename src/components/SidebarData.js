@@ -3,10 +3,11 @@ import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
+import Item from '../components/Item';
 
 export const SidebarData = [
   {
-    title: 'Overview',
+    title: 'CLUB',
     path: '/overview',
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
@@ -14,19 +15,34 @@ export const SidebarData = [
 
     subNav: [
       {
-        title: 'Users',
-        path: '/overview/users',
+        title: 'PREMIER LEAGUE',
+        path: './item',
+        icon: <IoIcons.IoIosPaper />
+      },
+      { 
+        title: 'LA LIGA',
+        path: '/revenue',
         icon: <IoIcons.IoIosPaper />
       },
       {
-        title: 'Revenue',
-        path: '/overview/revenue',
+        title: 'SERIA A',
+        path: '/revenue',
+        icon: <IoIcons.IoIosPaper />
+      },
+      {
+        title: 'BUNDESRIGA',
+        path: '/revenue',
+        icon: <IoIcons.IoIosPaper />
+      },
+      {
+        title: 'LIGUE 1',
+        path: '/revenue',
         icon: <IoIcons.IoIosPaper />
       }
     ]
   },
   {
-    title: 'Reports',
+    title: 'NATIONAL',
     path: '/reports',
     icon: <IoIcons.IoIosPaper />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
@@ -34,36 +50,53 @@ export const SidebarData = [
 
     subNav: [
       {
-        title: 'Reports',
-        path: '/reports/reports1',
+        title: 'EUROPE',
+        path: '/reports1',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
-        title: 'Reports 2',
-        path: '/reports/reports2',
+        title: 'AISA',
+        path: '/reports2',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
-        title: 'Reports 3',
-        path: '/reports/reports3',
+        title: 'AMERICA',
+        path: '/reports2',
+        icon: <IoIcons.IoIosPaper />,
+        cName: 'sub-nav'
+      },
+      {
+        title: 'AFRICA',
+        path: '/reports2',
+        icon: <IoIcons.IoIosPaper />,
+        cName: 'sub-nav'
+      },
+      {
+        title: 'OCEANIA',
+        path: '/reports3',
         icon: <IoIcons.IoIosPaper />
       }
     ]
   },
   {
-    title: 'Products',
+    title: 'LEGEND',
     path: '/products',
     icon: <FaIcons.FaCartPlus />
   },
   {
-    title: 'Team',
+    title: 'MATCH WORN',
     path: '/team',
     icon: <IoIcons.IoMdPeople />
   },
   {
-    title: 'Messages',
+    title: 'CLEARANCE',
+    path: '/support',
+    icon: <IoIcons.IoMdHelpCircle />
+  },
+  {
+    title: 'FOOTER',
     path: '/messages',
     icon: <FaIcons.FaEnvelopeOpenText />,
 
@@ -73,19 +106,15 @@ export const SidebarData = [
     subNav: [
       {
         title: 'Message 1',
-        path: '/messages/message1',
+        path: '/message1',
         icon: <IoIcons.IoIosPaper />
       },
       {
         title: 'Message 2',
-        path: '/messages/message2',
+        path: '/message2',
         icon: <IoIcons.IoIosPaper />
       }
     ]
   },
-  {
-    title: 'Support',
-    path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />
-  }
+  
 ];

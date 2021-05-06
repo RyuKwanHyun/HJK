@@ -23,6 +23,8 @@ import MyProductReviews from './components/pages/MyProductReviews';
 import Overview from './components/pages/Overview';
 import { Reports, ReportsOne, ReportsTwo, ReportsThree } from './components/pages/Reports';
 import Team from './components/pages/Team';
+import Item from './components/Item';
+import ContactUs from './components/ContactUs';
 
 function App() {
   return (
@@ -31,7 +33,7 @@ function App() {
       <Sidebar />
       <Switch>
         <Route path='/' exact component={Home} />
-        <Route path='/Help' component={Help} />
+        <Route path='/ContactUs' component={ContactUs} />
         <Route path='/MyAccount' component={MyAccount} />
         <Route path='/sign_up' component={Sign_up} />
         <Route path='/marketing' component={Marketing} />
@@ -53,8 +55,10 @@ function App() {
         <Route path='/reports/reports2' exact component={ReportsTwo} />
         <Route path='/reports/reports3' exact component={ReportsThree} />
         <Route path='/team' exact component={Team} />
+        <Route path='/Item' exact component={Item} />
       </Switch>
     </Router>
+    // <ContactUs></ContactUs>
   );
 }
 
