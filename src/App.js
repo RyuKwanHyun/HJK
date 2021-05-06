@@ -14,6 +14,7 @@ import { Reports, ReportsOne, ReportsTwo, ReportsThree } from './components/side
 import Team from './components/sidebar/Team';
 import Item from './components/sidebar/Item';
 import ContactUs from './components/header/ContactUs';
+import Footer1 from './components/footer123/Footer1';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path='/team' exact component={Team} />
         <Route path='/item' exact component={Item} />
       </Switch>
+      <Footer1 />
     </Router>
   );
 }

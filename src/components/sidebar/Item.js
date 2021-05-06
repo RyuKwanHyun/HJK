@@ -5,30 +5,30 @@ const Item = () => {
     return (
     <>
         <header>
-            <section className = "header" id = "header">
-                <nav>
-                    <a href = "#"></a>
-                </nav>
+            <div className = "header1" >
                 <div className = "text-box">
                     <h1>PREMIER LEAGUE</h1>
                     <p>
                         HJK's PREMIER LEAGUE<br/>
                     </p>
                 </div>
-            </section>
+            </div>
         </header>
 
         <div className = "row">
             <div className = "item-col">
+               
                 <p>
-                    <img src = "#"/>
+                    <img src = "#" />
                 </p>
+                
                 <br/><h3>1</h3>
                 <br/><h5>1</h5>
+               
             </div>
             <div className = "item-col">
                 <p>
-                    <img src = "#"/>
+                    <img src = "/img-4.jpg"/>
                 </p>
                 <br/><h3>1</h3>
                 <br/><h5>1</h5>
