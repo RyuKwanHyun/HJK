@@ -30,17 +30,17 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
-        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          Uniform
+            <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+           REFlER
           <i class='fab fa-firstdraft' />
-        </Link>
-        <div className='menu-icon' onClick={handleClick}>
+            </Link>
+        <div className='menu-icons' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className='nav-item'>
             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-              Home
+              HOME
             </Link>
           </li>
           <li
@@ -49,30 +49,30 @@ function Navbar() {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to='/services'
+              to='/SellShirts'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Services <i className='fas fa-caret-down' />
+              SELL SHIRTS <i className='fas fa-caret-down' />
             </Link>
             {dropdown && <Dropdown />}
           </li>
           <li className='nav-item'>
             <Link
-              to='/products'
+              to='/ContactUs'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Products
+              CONTACT US
             </Link>
           </li>
           <li className='nav-item'>
             <Link
-              to='/contact-us'
+              to='/MyAccount'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Contact Us
+              MY ACCOUNT
             </Link>
           </li>
           <li>
