@@ -20,22 +20,22 @@ export const SidebarData = [
       },
       { 
         title: 'LA LIGA',
-        path: '/revenue',
+        path: '/item2',
         icon: <IoIcons.IoIosPaper />
       },
       {
         title: 'SERIA A',
-        path: '/revenue',
+        path: '/item3',
         icon: <IoIcons.IoIosPaper />
       },
       {
         title: 'BUNDESRIGA',
-        path: '/revenue',
+        path: '/item4',
         icon: <IoIcons.IoIosPaper />
       },
       {
         title: 'LIGUE 1',
-        path: '/revenue',
+        path: '/item5',
         icon: <IoIcons.IoIosPaper />
       }
     ]
@@ -50,31 +50,31 @@ export const SidebarData = [
     subNav: [
       {
         title: 'EUROPE',
-        path: '/reports1',
+        path: '/item6',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'AISA',
-        path: '/reports2',
+        path: '/item7',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'AMERICA',
-        path: '/reports2',
+        path: '/item8',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'AFRICA',
-        path: '/reports2',
+        path: '/item9',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'OCEANIA',
-        path: '/reports3',
+        path: '/item10',
         icon: <IoIcons.IoIosPaper />
       }
     ]

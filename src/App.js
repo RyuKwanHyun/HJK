@@ -13,6 +13,15 @@ import Overview from './components/sidebar/Overview';
 import { Reports, ReportsOne, ReportsTwo, ReportsThree } from './components/sidebar/Reports';
 import Team from './components/sidebar/Team';
 import Item from './components/sidebar/Item';
+import Item2 from './components/sidebar/Item2';
+import Item3 from './components/sidebar/Item3';
+import Item4 from './components/sidebar/Item4';
+import Item5 from './components/sidebar/Item5';
+import Item6 from './components/sidebar/Item6';
+import Item7 from './components/sidebar/Item7';
+import Item8 from './components/sidebar/Item8';
+import Item9 from './components/sidebar/Item9';
+import Item10 from './components/sidebar/Item10';
 import ContactUs from './components/header/ContactUs';
 import Footer1 from './components/footer123/Footer1';
 
@@ -37,6 +46,15 @@ function App() {
         <Route path='/reports/reports3' exact component={ReportsThree} />
         <Route path='/team' exact component={Team} />
         <Route path='/item' exact component={Item} />
+        <Route path='/item2' exact component={Item2} />
+        <Route path='/item3' exact component={Item3} />
+        <Route path='/item4' exact component={Item4} />
+        <Route path='/item5' exact component={Item5} />
+        <Route path='/item6' exact component={Item6} />
+        <Route path='/item7' exact component={Item7} />
+        <Route path='/item8' exact component={Item8} />
+        <Route path='/item9' exact component={Item9} />
+        <Route path='/item10' exact component={Item10} />
       </Switch>
       <Footer1 />
     </Router>

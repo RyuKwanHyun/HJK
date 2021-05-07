@@ -1,6 +1,7 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 95%, rgb(26, 23, 23) 100%);
+  /* background: linear-gradient(90deg, rgb(228, 200, 221) 95%, rgb(26, 23, 23) 100%); */
   /* opacity:0.95;  */
+  background:bisque;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -9,7 +10,7 @@
 }
 
 .navbar-logo {
-  color: #fff;
+  color: black;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
@@ -18,8 +19,8 @@
 }
 
 .navbar-logo:hover {
-  color : red;
-  transition: 1s;
+  color : skyblue;
+  transition: 0.5s;
 }
 
 .fa-firstdraft {
@@ -45,7 +46,7 @@
 }
 
 .nav-links {
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-size: 15pt;

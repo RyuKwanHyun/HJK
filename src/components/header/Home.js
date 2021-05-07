@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
     <div>
-      <h1 className='home'>REFIER</h1>
+      <h1 className='home'>REP1ER</h1>
       </div>
     </>
   ); 

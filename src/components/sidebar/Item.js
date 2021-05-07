@@ -5,11 +5,11 @@ const Item = () => {
     return (
     <>
         <header>
-            <div className = "header1" >
+            <div className = "Pmain" >
                 <div className = "text-box">
                     <h1>PREMIER LEAGUE</h1>
                     <p>
-                        HJK's PREMIER LEAGUE<br/>
+                        REP1ER's PREMIER LEAGUE<br/>
                     </p>
                 </div>
             </div>
@@ -19,7 +19,7 @@ const Item = () => {
             <div className = "item-col">
                
                 <p>
-                    <img src = "#" />
+                    <img src = "# " />
                 </p>
                 
                 <br/><h3>1</h3>
@@ -35,7 +35,7 @@ const Item = () => {
             </div>
             <div className = "item-col">
                 <p>
-                    <img src = "#"/>
+                    <img src = "PrimierLeague.jpg"/>
                 </p>
                 <br/><h3>1</h3>
                 <br/><h5>1</h5>
@@ -88,7 +88,7 @@ const Item = () => {
             </div>
         </div>
 
-        <footer>
+        {/* <footer>
             <div className = "contact">
                 <h1>CONTACT US</h1>
                 <div className = "row">
@@ -97,7 +97,7 @@ const Item = () => {
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> */}
     </>
     );
 };

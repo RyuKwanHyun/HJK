@@ -13,7 +13,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
             <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-           REFlER
+            REP1ER
           <i class='fab fa-firstdraft' />
             </Link>
         <div className='menu-icons' onClick={handleClick}>

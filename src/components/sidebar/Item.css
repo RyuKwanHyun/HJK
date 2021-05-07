@@ -29,10 +29,91 @@ img {
 *  align : center
 */
 
-.header1 {
+.Pmain {
     min-height : 100vh;
     width : 100%;
-    background-image : linear-gradient(rgba(10, 10, 30, 0.5), rgba(10, 10, 30, 0.5)), url(./sidebar_images/img-3.jpg);
+    background-image : linear-gradient(rgba(10, 10, 30, 0.5), rgba(10, 10, 30, 0.5)), url(./sidebar_images/PrimierLeague.jpg);
+    background-position : center;
+    background-size : cover;
+    position : relative;
+}   
+
+.Lmain {
+    min-height : 100vh;
+    width : 100%;
+    background-image : linear-gradient(rgba(10, 10, 30, 0.5), rgba(10, 10, 30, 0.5)), url(./sidebar_images/LaLiga.png);
+    background-position : center;
+    background-size : cover;
+    position : relative;
+}   
+
+.Smain {
+    min-height : 100vh;
+    width : 100%;
+    background-image : linear-gradient(rgba(10, 10, 30, 0.5), rgba(10, 10, 30, 0.5)), url(./sidebar_images/SeriaA.png);
+    background-position : center;
+    background-size : cover;
+    position : relative;
+}   
+
+.Bmain {
+    min-height : 100vh;
+    width : 100%;
+    background-image : linear-gradient(rgba(10, 10, 30, 0.5), rgba(10, 10, 30, 0.5)), url(./sidebar_images/Bundesliga.jpg);
+    background-position : center;
+    background-size : cover;
+    position : relative;
+}   
+
+.Fmain {
+    min-height : 100vh;
+    width : 100%;
+    background-image : linear-gradient(rgba(10, 10, 30, 0.5), rgba(10, 10, 30, 0.5)), url(./sidebar_images/Ligue1.jpg);
+    background-position : center;
+    background-size : cover;
+    position : relative;
+}   
+
+.Umain {
+    min-height : 100vh;
+    width : 100%;
+    background-image : linear-gradient(rgba(10, 10, 30, 0.5), rgba(10, 10, 30, 0.5)), url(./sidebar_images/Europe.png);
+    background-position : center;
+    background-size : cover;
+    position : relative;
+}   
+
+.Amain {
+    min-height : 100vh;
+    width : 100%;
+    background-image : linear-gradient(rgba(10, 10, 30, 0.5), rgba(10, 10, 30, 0.5)), url(./sidebar_images/Asia.png);
+    background-position : center;
+    background-size : cover;
+    position : relative;
+}   
+
+.A2main {
+    min-height : 100vh;
+    width : 100%;
+    background-image : linear-gradient(rgba(10, 10, 30, 0.5), rgba(10, 10, 30, 0.5)), url(./sidebar_images/America.png);
+    background-position : center;
+    background-size : cover;
+    position : relative;
+}   
+
+.A3main {
+    min-height : 100vh;
+    width : 100%;
+    background-image : linear-gradient(rgba(10, 10, 30, 0.5), rgba(10, 10, 30, 0.5)), url(./sidebar_images/Africa.png);
+    background-position : center;
+    background-size : cover;
+    position : relative;
+}   
+
+.Omain {
+    min-height : 100vh;
+    width : 100%;
+    background-image : linear-gradient(rgba(10, 10, 30, 0.5), rgba(10, 10, 30, 0.5)), url(./sidebar_images/Oceania.png);
     background-position : center;
     background-size : cover;
     position : relative;
@@ -85,7 +166,7 @@ img {
     max-width : 60%;
 }
 
-.contact {
+/* .contact {
     background : black;
     border-radius : 10px;
     color : #fff;
@@ -95,7 +176,7 @@ img {
     padding-top : 50px;
     padding-bottom : 50px;
     margin-bottom : 70px;
-}
+} */
 
 .contact img {
     max-width : 10%;
