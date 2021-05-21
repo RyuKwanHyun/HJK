@@ -28,6 +28,7 @@ import Register from './components/header/Register';
 import Cart from './components/sidebar/Cart';
 
 function App() {
+  
   return (
     <Router>
       <Navbar />
@@ -56,8 +57,8 @@ function App() {
         <Route path='/item7'  component={Item7} />
         <Route path='/item8'  component={Item8} />
         <Route path='/item9'  component={Item9} />
-        {/* <Route path='/item10'  component={Item10} />
-        <Route path='/cart'  component={Cart} /> */}
+        <Route path='/item10'  component={Item10} />
+        <Route path='/cart'  component={Cart} />
       </Switch>
       <Footer1 />
     </Router>
