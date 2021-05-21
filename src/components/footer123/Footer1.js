@@ -9,58 +9,35 @@ function Footer1() {
 
     const columns = [
         {
-            title: "Resources",
+            title: "REP1ER",
             resources: [
                 {
-                    name: "About",
-                    link: "/about"
+                    name: "About US",
+                    link: "/aboutus"
                 },
                 {
-                    name: "Careers",
-                    link: "/careers"
+                    name: "ContactUs",
+                    link: "/contactus"
                 },
                 {
-                    name: "Contact",
+                    name: "Announcement",
                     link: "/ContactUs"
                 },
                 {
-                    name: "Admin",
-                    link: "/admin"
+                    name: "Code View",
+                    link: "/codeview"
+                },
+                {
+                    name: "CEO Comment",
+                    link: "/comment"
                 }
             ]
-        },
-        {
-            title: "Legal",
-            resources: [
-                {
-                    name: "Privacy",
-                    link: "/privacy"
-                },
-                {
-                    name: "Terms",
-                    link: "/terms"
-                }
-                       ]
-        },
-        {
-            title: "Visit",
-            resources: [
-                {
-                    name: "Locations",
-                    link: "/locations"
-                },
-                {
-                    name: "Culture",
-                    link: "/culture"
-                }
-                       ]
         }
     ]
         return <SimpleReactFooter
             description={description}
             title={title}
             columns={columns}
-            linkedin="fluffy_cat_on_linkedin"
             facebook="profile.php?id=100004751140919"
             twitter="twitter"
             instagram="live"
