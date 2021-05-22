@@ -8,9 +8,9 @@ import SellShirts from './components/header/SellShirts';
 import MyAccount from './components/header/MyAccount';
 import AccountInformation from './components/header/AccountInformation';
 import AccountDashboard from './components/header/AccountDashboard';
-import Club from './components/sidebar/Club';
-import National from './components/sidebar/National';
-import Matchworn from './components/sidebar/Matchworn';
+import Overview from './components/sidebar/Overview';
+import { Reports } from './components/sidebar/Reports';
+import Team from './components/sidebar/Team';
 import Item from './components/sidebar/Item';
 import Item2 from './components/sidebar/Item2';
 import Item3 from './components/sidebar/Item3';
@@ -21,7 +21,6 @@ import Item7 from './components/sidebar/Item7';
 import Item8 from './components/sidebar/Item8';
 import Item9 from './components/sidebar/Item9';
 import Item10 from './components/sidebar/Item10';
-import Legend from './components/sidebar/Legend';
 import ContactUs from './components/header/ContactUs';
 import Footer1 from './components/footer123/Footer1';
 import Login from './components/header/Login';
@@ -47,7 +46,9 @@ function App() {
         <Route path='/sellShirts' component={SellShirts} />
         <Route path='/accountinformation' component={AccountInformation} />
         <Route path='/accountdashboard' component={AccountDashboard} />
-        <Route path='/club'  component={Club} />
+        <Route path='/overview'  component={Overview} />
+        <Route path='/reports'  component={Reports} />
+        <Route path='/team'  component={Team} />
         <Route path='/item'  component={Item} />
         <Route path='/item2'  component={Item2} />
         <Route path='/item3'  component={Item3} />
@@ -58,9 +59,6 @@ function App() {
         <Route path='/item8'  component={Item8} />
         <Route path='/item9'  component={Item9} />
         <Route path='/item10'  component={Item10} />
-        <Route path='/national'  component={National} />
-        <Route path='/legend'  component={Legend} />
-        <Route path='/matchworn'  component={Matchworn} />
         <Route path='/cart'  component={Cart} />
         <Route path='/contactus' component={ContactUs} />
         <Route path='/aboutus'  component={AboutUs} />
