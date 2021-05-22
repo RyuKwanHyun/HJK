@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "./Item.css";
+import "./Item6.css";
 
 const Item = () => {
     return (
     <>
         <header>
-            <div className = "Umain" >
+            <div className = "Emain" >
                 <div className = "text-box">
                     <h1>EUROPE</h1>
                     <p>

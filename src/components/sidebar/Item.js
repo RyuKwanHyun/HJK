@@ -4,7 +4,6 @@ import "./Item.css";
 const Item = () => {
     return (
     <>
-        <header>
             <div className = "Pmain" >
                 <div className = "text-box">
                     <h1>PREMIER LEAGUE</h1>
@@ -13,7 +12,6 @@ const Item = () => {
                     </p>
                 </div>
             </div>
-        </header>
 
         <div className = "row">
             <div className = "item-col">

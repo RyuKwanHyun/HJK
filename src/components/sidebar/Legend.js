@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Legend.css";
 
 const Legend = () => {
   return (
@@ -6,10 +7,10 @@ const Legend = () => {
       <header>
           <div className = "legend" >
               <div className = "text-box">
-                  <h1>LEGEND</h1>
+                  {/* <h1>LEGEND</h1>
                   <p>
                       REP1ER's LEGEND<br/>
-                  </p>
+                  </p> */}
               </div>
           </div>
       </header>

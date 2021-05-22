@@ -1,4 +1,4 @@
-import * as actionTypes from '../constants/CartConstants';
+import * as actionTypes from '../constants/Cartconstants';
 import axios from 'axios';
 
 export const addToCart = (productId, qty) => async (dispatch, getState) => {

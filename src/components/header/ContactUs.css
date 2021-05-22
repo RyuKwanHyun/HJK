@@ -9,12 +9,12 @@ li {
     list-style : none;
 }
 
-a {
+/* a {
     text-decoration : none;
     color : black;
     font-weight : bold;
     font-size : 15px;
-}
+} */
 
 img {
     border : 0;

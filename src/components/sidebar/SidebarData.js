@@ -7,7 +7,7 @@ import * as RiIcons from 'react-icons/ri';
 export const SidebarData = [
   {
     title: 'CLUB',
-    path: '/overview',
+    path: '/Club',
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -42,7 +42,7 @@ export const SidebarData = [
   },
   {
     title: 'NATIONAL',
-    path: '/reports',
+    path: '/National',
     icon: <IoIcons.IoIosPaper />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -81,12 +81,12 @@ export const SidebarData = [
   },
   {
     title: 'LEGEND',
-    path: '/products',
+    path: '/Legend',
     icon: <FaIcons.FaCartPlus />
   },
   {
     title: 'MATCH WORN',
-    path: '/team',
+    path: '/Matchworn',
     icon: <IoIcons.IoMdPeople />
   },
   {

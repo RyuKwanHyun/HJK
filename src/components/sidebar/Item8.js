@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Item.css";
+import "./Item8.css";
 
 const Item = () => {
     return (
@@ -87,17 +87,6 @@ const Item = () => {
                 <br/><h5>1</h5>
             </div>
         </div>
-
-        {/* <footer>
-            <div className = "contact">
-                <h1>CONTACT US</h1>
-                <div className = "row">
-                    <div className = "contact-col">
-                        <a href = "#"><img src = "#"/></a>
-                    </div>
-                </div>
-            </div>
-        </footer> */}
     </>
     );
 };

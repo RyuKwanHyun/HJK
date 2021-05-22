@@ -1,32 +1,16 @@
-/* basic setting ( all reset ) */
-/* 
-li {
-    list-style : none;
-}
-
-a {
-    text-decoration : none;
-    color : black;
-    font-weight : bold;
-    font-size : 15px;
-}
-
-img {
-    border : 0;
-} */
-
-/* header 
-*  align : center
-*/
-
-.Pmain {
+.Smain {
     min-height : 100vh;
     width : 100%;
-    background-image : linear-gradient(rgba(10, 10, 30, 0.5), rgba(10, 10, 30, 0.5)), url(./sidebar_images/PrimierLeague.jpg);
+    background-image : linear-gradient(rgba(10, 10, 30, 0.5), rgba(10, 10, 30, 0.5)), url(./sidebar_images/SeriaA.png);
     background-position : center;
     background-size : cover;
     position : relative;
 }   
+
+.contact img {
+    max-width : 10%;
+    height : auto;
+}
 
 .text-box {
     width : 100%;
@@ -73,9 +57,4 @@ img {
 
 .item-col img {
     max-width : 60%;
-}
-
-.contact img {
-    max-width : 10%;
-    height : auto;
 }
