@@ -13,18 +13,18 @@ function Navbar() {
       <div className='navbar'>
             <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             REP1ER
-          <i class='fab fa-firstdraft' />
+          {/* <i className='fab fa-firstdraft' /> */}
             </Link>
         <div className='menu-icons' onClick={handleClick}>
-          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          <div className={click ? ' fa-times' : ' fa-bars'} />
         </div>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li className='nav-item'>
+        <div className={click ? 'nav-menu active' : 'nav-menu'}>
+          <div className='nav-item'>
             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
               HOME
             </Link>
-          </li>
-          <li
+          </div>
+          <div
             className='nav-item'>
             <Link
               to='/SellShirts'
@@ -34,8 +34,8 @@ function Navbar() {
               SELL SHIRTS <i className='fas fa-caret-down' />
             </Link>
           
-          </li>
-          <li className='nav-item'>
+          </div>
+          <div className='nav-item'>
             <Link
               to='/ContactUs'
               className='nav-links'
@@ -43,8 +43,8 @@ function Navbar() {
             >
               CONTACT US
             </Link>
-          </li>
-          <li className='nav-item'>
+          </div>
+          <div className='nav-item'>
             <Link
               to='/MyAccount'
               className='nav-links'
@@ -52,10 +52,10 @@ function Navbar() {
             >
               MY ACCOUNT
             </Link>
-          </li>
+          </div>
           
-        </ul>
-        <li className='nav-item'>
+        </div>
+        <div className='nav-item'>
             <Link
               to='/Login'
               className='nav-links'
@@ -63,8 +63,8 @@ function Navbar() {
             >
               LOGIN
             </Link>
-          </li>
-          <li className='nav-item'>
+          </div>
+          <div className='nav-item'>
             <Link
               to='/Register'
               className='nav-links'
@@ -72,7 +72,7 @@ function Navbar() {
             >
               REGISTER
             </Link>
-          </li>
+          </div>
       </div>
     </>
   );

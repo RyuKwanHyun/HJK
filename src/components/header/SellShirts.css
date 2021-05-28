@@ -1,15 +1,15 @@
-.Sell_Football_Shirts {
+.sell_football_shirts {
     margin : 0 auto;
 }
 
-#submitBtn {
+.sell_btn {
     border : 1px solid black;
     color : white;
     background-color : black;
     padding : 10px;
 }
 
-#cancelBtn {
+.sell_cancelBtn {
     border : 1px solid black;
     color : white;  
     background-color : black;
@@ -26,11 +26,3 @@
     
 } */
 
-#DashboardBtn {
-    border : 1px solid black;
-    color : white;  
-    background-color : skyblue;
-    padding : 10px;
-    width: 100;
-    margin : 0px;
-}

@@ -15,7 +15,7 @@ export const SidebarData = [
     subNav: [
       {
         title: 'PREMIER LEAGUE',
-        path: './item',
+        path: './itemtitle',
         icon: <IoIcons.IoIosPaper />
       },
       { 
