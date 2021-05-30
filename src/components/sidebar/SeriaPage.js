@@ -1,8 +1,8 @@
-import './Matchworn.css';
+import './SeriaPage.css';
 import Item from './Item';
 import {ItemData} from './ItemData';
 
-const Matchworn = () => {
+const SeriaPage = () => {
     const itemDatas = ItemData;
     let cnt = 0;
 
@@ -18,17 +18,17 @@ const Matchworn = () => {
             </div>
 
             <div className = "premier_grid">
-                {itemDatas[11].map((matchwornDatas) => <Item
+                {itemDatas[2].map((seriaDatas) => <Item
                     key = {cnt++} 
-                    _id = {matchwornDatas._id}
-                    name = {matchwornDatas.name}
-                    price = {matchwornDatas.price}
-                    img = {matchwornDatas.img}
-                    detail = {matchwornDatas.details}
+                    _id = {seriaDatas._id}
+                    name = {seriaDatas.name}
+                    price = {seriaDatas.price}
+                    img = {seriaDatas.img}
+                    detail = {seriaDatas.details}
                     />)}
             </div>
         </>
     )
 };
 
-export default Matchworn;
+export default SeriaPage;

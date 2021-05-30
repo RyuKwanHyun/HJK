@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Item.css";
-import imgSrc from '../sidebar/images/aws.png'
 import {Link, Redirect} from 'react-router-dom';
 
 const Item = ({ _id, name, price, img, detail }) => {

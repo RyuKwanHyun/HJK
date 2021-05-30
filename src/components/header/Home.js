@@ -35,6 +35,7 @@ export default function Home() {
 
   return (
     <>
+    {console.log("hi"+ localStorage.getItem("name"))}
 
       <div className="home_main">
         <div className='slide_event'>

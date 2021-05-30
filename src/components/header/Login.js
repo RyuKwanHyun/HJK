@@ -24,6 +24,7 @@ const Login = ({click}) => {
                     axios.defaults.headers.common['Authorization'] = `Bearer ${accessToken}`;
                     console.log(response.data);
                     setToken(response.data);
+                    localStorage.setItem("name", name);
                     // setLoginFlag(response.data.loginFlag);
                 });
             } catch(err) {
@@ -43,6 +44,8 @@ const Login = ({click}) => {
             alert("Login Successful !!!");
             click = true;
             setRedirectFlag(true);
+            window.location.reload();
+            window.location.replace("/");
         } else {
 
             console.log("Login Failed");

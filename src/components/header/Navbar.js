@@ -8,13 +8,17 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
+  const onLogout = () => { window.localStorage.clear() 
+    window.location.reload()
+  };
+
   return (
     <>
       <div className='navbar'>
-            <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            REP1ER
+        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          REP1ER
           {/* <i className='fab fa-firstdraft' /> */}
-            </Link>
+        </Link>
         <div className='menu-icons' onClick={handleClick}>
           <div className={click ? ' fa-times' : ' fa-bars'} />
         </div>
@@ -33,7 +37,7 @@ function Navbar() {
             >
               SELL SHIRTS <i className='fas fa-caret-down' />
             </Link>
-          
+
           </div>
           <div className='nav-item'>
             <Link
@@ -53,9 +57,13 @@ function Navbar() {
               MY ACCOUNT
             </Link>
           </div>
-          
+
         </div>
-        <div className='nav-item'>
+
+
+        {!localStorage.getItem("name") &&
+          <div className='nav-item'>
+
             <Link
               to='/Login'
               className='nav-links'
@@ -64,6 +72,8 @@ function Navbar() {
               LOGIN
             </Link>
           </div>
+        }
+        {!localStorage.getItem("name") &&
           <div className='nav-item'>
             <Link
               to='/Register'
@@ -73,6 +83,21 @@ function Navbar() {
               REGISTER
             </Link>
           </div>
+        }
+
+        {localStorage.getItem("name") &&
+          <div className='nav-item'>
+
+            <Link
+              to='/'
+              className='nav-links'
+              onClick={onLogout}
+            >
+              LOGOUT
+            </Link>
+          </div>
+        }
+
       </div>
     </>
   );

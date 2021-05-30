@@ -1,8 +1,8 @@
-import './Matchworn.css';
+import './Ligue1Page.css';
 import Item from './Item';
 import {ItemData} from './ItemData';
 
-const Matchworn = () => {
+const Ligue1Page = () => {
     const itemDatas = ItemData;
     let cnt = 0;
 
@@ -18,17 +18,17 @@ const Matchworn = () => {
             </div>
 
             <div className = "premier_grid">
-                {itemDatas[11].map((matchwornDatas) => <Item
+                {itemDatas[4].map((ligue1Datas) => <Item
                     key = {cnt++} 
-                    _id = {matchwornDatas._id}
-                    name = {matchwornDatas.name}
-                    price = {matchwornDatas.price}
-                    img = {matchwornDatas.img}
-                    detail = {matchwornDatas.details}
+                    _id = {ligue1Datas._id}
+                    name = {ligue1Datas.name}
+                    price = {ligue1Datas.price}
+                    img = {ligue1Datas.img}
+                    detail = {ligue1Datas.details}
                     />)}
             </div>
         </>
     )
 };
 
-export default Matchworn;
+export default Ligue1Page;
