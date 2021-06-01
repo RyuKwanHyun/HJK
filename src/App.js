@@ -32,6 +32,13 @@ import Oceania from './components/sidebar/Oceania';
 
 import Matchworn from './components/sidebar/Matchworn';
 import Legend from './components/sidebar/Legend';
+import ItemDetail from './components/sidebar/ItemDetail';
+
+import Payment from './Payment';
+import PaymentResult from './PaymentResult';
+import Certification from './Certification';
+import CertificationResult from './CertificationResult';
+import paymentHome from './payment_page';
 
 function App() {
   
@@ -70,7 +77,13 @@ function App() {
         <Route path='/codeview'  component={CodeView} />
         <Route path='/comment'  component={Comment} />
         
+        <Route path='/itemdetail/:id'  component={ItemDetail} />
 
+        <Route exact path="/payment" component={Payment} />
+      <Route exact path="/payment/result" component={PaymentResult} />
+      <Route exact path="/certification" component={Certification} />
+      <Route exact path="/certification/result" component={CertificationResult} />
+      <Route exact path="/paymenthome" component={paymentHome} />
       </Switch>
       <Footer1 />
     </Router>

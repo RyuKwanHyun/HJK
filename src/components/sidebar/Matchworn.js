@@ -8,16 +8,16 @@ const Matchworn = () => {
 
     return (
         <>
-            <div className="premier_title" >
-                <div className="premier_title_text_box">
-                    <h1>PREMIER LEAGUE</h1>
+            <div className="matchworn_title" >
+                <div className="matchworn_title_text_box">
+                    <h1>MATCH WORN</h1>
                     <p>
-                        REP1ER's PREMIER LEAGUE<br />
+                        REP1ER's MATCH WORN<br />
                     </p>
                 </div>
             </div>
 
-            <div className = "premier_grid">
+            <div className = "matchworn_grid">
                 {itemDatas[11].map((matchwornDatas) => <Item
                     key = {cnt++} 
                     _id = {matchwornDatas._id}

@@ -8,16 +8,16 @@ const Oceania = () => {
 
     return (
         <>
-            <div className="premier_title" >
-                <div className="premier_title_text_box">
-                    <h1>PREMIER LEAGUE</h1>
+            <div className="oceania_title" >
+                <div className="oceania_title_text_box">
+                    <h1>OCEANIA</h1>
                     <p>
-                        REP1ER's PREMIER LEAGUE<br />
+                        REP1ER's OCEANIA<br />
                     </p>
                 </div>
             </div>
 
-            <div className = "premier_grid">
+            <div className = "oceania_grid">
                 {itemDatas[9].map((oceaniaDatas) => <Item
                     key = {cnt++} 
                     _id = {oceaniaDatas._id}

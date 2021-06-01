@@ -8,16 +8,16 @@ const Europe = () => {
 
     return (
         <>
-            <div className="premier_title" >
-                <div className="premier_title_text_box">
-                    <h1>PREMIER LEAGUE</h1>
+            <div className="europe_title" >
+                <div className="europe_title_text_box">
+                    <h1>EUROPE</h1>
                     <p>
-                        REP1ER's PREMIER LEAGUE<br />
+                        REP1ER's EUROPE<br />
                     </p>
                 </div>
             </div>
 
-            <div className = "premier_grid">
+            <div className = "europe_grid">
                 {itemDatas[5].map((europeDatas) => <Item
                     key = {cnt++} 
                     _id = {europeDatas._id}

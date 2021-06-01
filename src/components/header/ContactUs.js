@@ -7,7 +7,7 @@ const ContactUs = () => {
         <div className = "contact_head" >
                 
             <div className = "contact_text-box">
-                I'm korean
+                I'm Korean
             </div>
 
             <div className = "contact_text-box2">

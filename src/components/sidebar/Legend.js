@@ -8,16 +8,16 @@ const Legend = () => {
 
     return (
         <>
-            <div className="premier_title" >
-                <div className="premier_title_text_box">
-                    <h1>PREMIER LEAGUE</h1>
+            <div className="legend_title" >
+                <div className="legend_title_text_box">
+                    <h1>LEGEND</h1>
                     <p>
-                        REP1ER's PREMIER LEAGUE<br />
+                        REP1ER's LEGEND<br />
                     </p>
                 </div>
             </div>
 
-            <div className = "premier_grid">
+            <div className = "legend_grid">
                 {itemDatas[10].map((legendDatas) => <Item
                     key = {cnt++} 
                     _id = {legendDatas._id}

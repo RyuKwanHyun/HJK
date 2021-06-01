@@ -8,16 +8,16 @@ const Ligue1Page = () => {
 
     return (
         <>
-            <div className="premier_title" >
-                <div className="premier_title_text_box">
-                    <h1>PREMIER LEAGUE</h1>
+            <div className="ligue1_title" >
+                <div className="ligue1_title_text_box">
+                    <h1>FRANCE LIGUE1</h1>
                     <p>
-                        REP1ER's PREMIER LEAGUE<br />
+                        REP1ER's FRANCE LIGUE1<br />
                     </p>
                 </div>
             </div>
 
-            <div className = "premier_grid">
+            <div className = "ligue1_grid">
                 {itemDatas[4].map((ligue1Datas) => <Item
                     key = {cnt++} 
                     _id = {ligue1Datas._id}

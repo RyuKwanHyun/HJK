@@ -15,11 +15,13 @@ export const SidebarData = [
       {
         title: 'PREMIER LEAGUE',
         path: './premierleague',
+        index : '1',
         icon: <IoIcons.IoIosPaper />
       },
       { 
         title: 'LA LIGA',
         path: '/laliga',
+        inex : '2',
         icon: <IoIcons.IoIosPaper />
       },
       {
@@ -87,11 +89,11 @@ export const SidebarData = [
     path: '/matchworn',
     icon: <IoIcons.IoMdPeople />
   },
-  {
-    title: 'CLEARANCE',
-    path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />
-  },
+  // {
+  //   title: 'CLEARANCE',
+  //   path: '/support',
+  //   icon: <IoIcons.IoMdHelpCircle />
+  // },
   {
     title: 'CART',
     path: '/cart',

@@ -14,22 +14,22 @@ const SellShirts = () => {
 
 
             <p>Name</p>
-            <div className='Name'>
-                <input type='text'></input>
+            <div className='sell_contents_text'>
+                <input type='text' placeholder ="Please full Name"></input>
             </div>
 
             <p>Phone Number</p>
-            <div className='Phone Number'>
+            <div className='sell_contents_text'>
                 <input type='text'></input>
             </div>
 
             <p>E-mail Address</p>
-            <div className='E-mail Address'>
+            <div className='sell_contents_text'>
                 <input type='text'></input>
             </div>
 
             <p>Brief description of items.</p>
-            <div className='E-mail Address'>
+            <div className='sell_contents_text'>
                 <input type='text'></input>
             </div>
 

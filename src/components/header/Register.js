@@ -25,13 +25,13 @@ function RegisterForm() {
     if (password !== passwordconfirm) {
       return setPasswordError(true);
     }
-    console.log({
-      email,
-      password,
-      passwordconfirm,
-      name,
-      phonenum1
-    });
+    // console.log({
+    //   email,
+    //   password,
+    //   passwordconfirm,
+    //   name,
+    //   phonenum1
+    // });
 
     userPost();
   };
@@ -80,7 +80,7 @@ function RegisterForm() {
 
         console.log("Success");
         //history.pushState('/');
-        //setSignUpCheck(true);
+        setSignUpCheck(true);
       } catch (e) {
         console.log(e);
       }
@@ -121,10 +121,10 @@ function RegisterForm() {
                     {/* <label for = "address">Address:</label>
                     <input type = "text" id = "address" name = "user_address" 
                     ></input> */}
-                    <Link to='/Login'>
+                    
                     <button className = "register_submit_button" type = "submit" onClick = {onSubmit}>Sign Up</button>
                     {signUpCheck && (<Redirect to = "/Login"></Redirect>)}
-                    </Link>
+                    
                 </form>
             </div>
         </div>

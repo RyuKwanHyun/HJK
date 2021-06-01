@@ -21,11 +21,11 @@ const Button = styled.button`
 export default function Home() {
 
   let slides = [
-    <img src="https://picsum.photos/800/300/?random" alt="1" />,
-    <img src="https://picsum.photos/800/301/?random" alt="2" />,
-    <img src="https://picsum.photos/800/302/?random" alt="3" />,
-    <img src="https://picsum.photos/800/303/?random" alt="4" />,
-    <img src="https://picsum.photos/800/304/?random" alt="5" />];
+    <img src={require("./images/aguero.jpg").default} alt="1" />,
+    <img src={require("./images/ajh.jpg").default} alt="2" />,
+    <img src={require("./images/bebe.jpg").default} alt="3" />,
+    <img src={require("./images/event2.jpg").default} alt="4" />,
+    <img src={require("./images/roony.jpg").default} alt="5" />];
 
   const [showModal, setShowModal] = useState(false);
 
@@ -39,7 +39,7 @@ export default function Home() {
 
       <div className="home_main">
         <div className='slide_event'>
-          <Carousel slides={slides} autoplay={true} interval={1600} />
+          <Carousel slides={slides} autoplay={true} interval={1800} />
         </div>
         <div className="home_title">
           REP1ER

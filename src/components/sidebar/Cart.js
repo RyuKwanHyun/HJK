@@ -35,6 +35,7 @@ const Cart = () => {
         <div className="cartscreen">
             <div className="cartscreen_left">
                 <h2>Shopping Cart</h2>
+                {console.log(cartItems)}
                 {cartItems.length === 0 ? (
                     <div>
                         Your cart is empty <Link to="/">Go Back</Link>
@@ -44,10 +45,12 @@ const Cart = () => {
             <div className="cartscreen_right">
                 <div className="cartscreen_info">
                     <p>Subtotal ({getCartCount()}) items</p>
-                    <p>{getCartSubTotal()}원</p>
+                    <p>{getCartSubTotal()}￦</p>
                 </div>
-                <div>
+                <div className = "checkout_btn">
+                    <Link to = "/paymenthome">
                     <button>Proceed To Checkout</button>
+                    </Link>
                 </div>
             </div>
         </div>

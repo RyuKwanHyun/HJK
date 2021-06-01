@@ -1,5 +1,5 @@
 
-.premier_title {
+.asia_title {
     min-height : 100vh;
     width : 100%;
     background-image : linear-gradient(rgba(10, 10, 30, 0.5), rgba(10, 10, 30, 0.5)), url(./sidebar_images/PrimierLeague.jpg);
@@ -8,7 +8,7 @@
     position : relative;
 }   
 
-.premier_title_text_box {
+.asia_title_text_box {
     width : 100%;
     color : #fff;
     position : absolute;
@@ -18,17 +18,17 @@
     text-align : center;
 }
 
-.premier_title_text_box h1 {
+.asia_title_text_box h1 {
     font-size : 70px;
 }
 
-.premier_title_text_box p {
+.asia_title_text_box p {
     margin : 30px 0 30px;
     font-size : 14px;
     color : #fff;
 }
 
-.premier_grid {
+.asia_grid {
     margin-top : 5%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);

@@ -33,4 +33,33 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin : 5px;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@media  screen and (max-width: 1020px) {
+    .premier_grid {
+        margin-top : 5%;
+        display: grid;
+        
+        grid-template-columns: repeat(2, 1fr);
+        margin : 5px;
+        align-content: center;
+        justify-content: center;
+    }
+        
+    
+}
+
+@media screen and (max-width: 520px) {
+    .premier_grid {
+    margin-top : 5%;
+    display: inline-block;
+    margin : 5px;
+    align-content: center;
+    justify-content: center;
+    
+    
+    }
 }

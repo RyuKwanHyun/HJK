@@ -6,14 +6,15 @@ const CartItem = ({ item, qtyChangeHandler, removeHandler }) => {
             <div className="cartitem_image">
                 {/* 이미지 넣으면 이거 */}
                 {/* <img src={item.imageUrl} alt={item.name}></img> */}
-                <img src={require('../../images/img-1.jpg').default} alt={item.name}></img>
+                {/*<img src={require('../../images/aws.png').default} alt={item.name}></img>*/}
+                <img src="http://placehold.it/320x320?text=sample" alt={item.name}></img>
             </div>
 
             <Link to={`/product/${item.product}`} className="cartitem_name">
                 <p>{item.name}</p>
             </Link>
 
-            <p className="cartitem_price">{item.price}원</p>
+            <p className="cartitem_price">{item.price}￦</p>
 
             <select className="cartitem_select" value={item.qty} onChange={(e) => qtyChangeHandler(item.product, e.target.value)}>
                 {[...Array(item.countInStock).keys()].map(x => (
@@ -21,7 +22,7 @@ const CartItem = ({ item, qtyChangeHandler, removeHandler }) => {
                 ))}
             </select>
             <button className="cartitem_deleteBtn" onClick={() => removeHandler(item.product)}>
-                <i className="fas fa-trash"></i>
+                Delete
             </button>
         </div>
     )
