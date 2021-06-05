@@ -6,21 +6,30 @@
     background-position : center;
     background-size : cover;
     position : relative;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }   
 
 .code_text-box {
     width : 100%;
     color : #fff;
-    position : absolute;
-    top : 20%;
-    left : 50%;
-    transform : translate(-50%, -50%);
     text-align : center;
     font-size: 110px;
     font-weight: bold;
+
 }
 .code_link {
     font-size: 110px;
     color: burlywood;
     font-family: fantasy;
+    text-align: center;
+}
+
+.code_contents,
+.code_contents2 {
+    text-align: center;
+    color :blanchedalmond;
+    font-size: 40px;
 }

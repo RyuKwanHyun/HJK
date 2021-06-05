@@ -7,7 +7,7 @@ const CartItem = ({ item, qtyChangeHandler, removeHandler }) => {
                 {/* 이미지 넣으면 이거 */}
                 {/* <img src={item.imageUrl} alt={item.name}></img> */}
                 {/*<img src={require('../../images/aws.png').default} alt={item.name}></img>*/}
-                <img src="http://placehold.it/320x320?text=sample" alt={item.name}></img>
+                {/* <img src="http://placehold.it/320x320?text=sample" alt={item.name}></img> */}
             </div>
 
             <Link to={`/product/${item.product}`} className="cartitem_name">

@@ -69,7 +69,9 @@ const Login = ({click}) => {
         <div className = "login_main">
             <div className = "login_body">
                 <div className = "login_main_holder">
+                    <div className = "login_title">
                     <h1 >Login</h1>
+                    </div>
                     
                     <div className = "signin_error_msg_holder">
                     <p className = "signin_error_msg">Invalid username <span className = "error_msg_second_line">and/or password</span></p>

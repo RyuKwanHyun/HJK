@@ -1,46 +1,56 @@
+import { Divider } from 'antd';
 import React from 'react';
 import './SellShirts.css';
+import {Link} from 'react-router-dom';
 
 const SellShirts = () => {
     return (
-        <div className='sellshirts'>
-            <div className="sell_title"><h1>Sell Football Shirts(셔츠 판매)</h1>
-            </div>
-            <div className="sell_contents">
-                <h2>We don't just sell shirts we also buy them so if you want to turn your old shirts into $$$'s please e-mail us what you have for us to consider.</h2>
-                <h5>(셔츠만 판매하는 것이 아니라 구입도 할 수 있으니, 오래된 셔츠를 $$$로 바꾸고 싶으시면 저희에게 고려해야 할 사항을 이메일로 보내 주십시오.)   :)</h5>
-            </div>
-            <h3>SEND MESSAGE(SELL SHIRTS)</h3>
 
+        <div className="sell_head">
 
-            <p>Name</p>
-            <div className='sell_contents_text'>
-                <input type='text' placeholder ="Please full Name"></input>
+            <div className="sell_text-box">
+                Sell Football Shirts(셔츠 판매)
             </div>
 
-            <p>Phone Number</p>
-            <div className='sell_contents_text'>
-                <input type='text'></input>
+            <div className="sell_text-box2">
+                We don't just sell shirts we also buy them so if you want to turn your old shirts into $$$'s please e-mail us what you have for us to consider.
             </div>
 
-            <p>E-mail Address</p>
-            <div className='sell_contents_text'>
-                <input type='text'></input>
+            <div className="sell_text-box3">
+                (셔츠만 판매하는 것이 아니라 구입도 할 수 있으니, 오래된 셔츠를 $$$로 바꾸고 싶으시면 저희에게 고려해야 할 사항을 이메일로 보내 주십시오.)   :)
             </div>
 
-            <p>Brief description of items.</p>
-            <div className='sell_contents_text'>
-                <input type='text'></input>
+            <div className="sell_text-box4">
+                Name <br />
+                <input className="sell_text-text" type='text'></input>
             </div>
 
-            <button className='SENDMESSAGE'>
+            <div className="sell_text-box5">
+                PhoneNumber <br />
+                <input className="sell_text-text" type='text'></input>
+            </div>
+
+            <div className="sell_text-box6">
+                E-mail Address <br />
+                <input className="sell_text-text" type='text'></input>
+            </div>
+
+            <div className="sell_text-box7">
+                 Brief description of items. <br />
+                <input className="sell_text-text" type='text'></input>
+            </div>
+            
+            <div className="sendmessage">
+                <Link to ="/contactus">
                 <button className="sell_btn" type="submit">SEND YOUR MESSAGE</button>
-            </button>
+                </Link>
+            </div>
 
-            <button className='CANCEL'>
+            <div className='cancel'>
+            <Link to= "/">
                 <button className="sell_cancelBtn" type="reset">CANCEL</button>
-            </button>
-
+                </Link>
+            </div>
         </div>
     );
 }

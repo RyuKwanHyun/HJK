@@ -12,7 +12,7 @@ const AboutUs = () => {
 
             <div className = "about_text-box2">
                     
-                ABOUT US.
+            Our shopping mall also buys new and used products and sells them to customers.
                     
             </div>
         </div>

@@ -45,14 +45,12 @@
 
   }
   .btn01 {
-    min-width: 150px;
     display : block;
     border-radius: 10px;
     border: none;
     background: #141414;
     color: #fff;
     cursor: pointer;
-    flex-basis: 20%;
     border : 1px solid black;
     font-weight: bold;
     justify-content: center;

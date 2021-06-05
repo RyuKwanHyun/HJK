@@ -2,21 +2,22 @@
   background:bisque;
   height: 80px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 15px;
   font-weight : bold;
 }
 
+.sidebar_icon{  
+  display: inline-block;
+  justify-content: left;
+  text-align: left;
+}
+
 .navbar-logo {
   color: black;
-  justify-self: start;
-  margin-left: 0px;
   cursor: pointer;
   text-decoration: none;
   font-size: 3rem;
-  
-  
+  font-family:inherit;
 }
 
 .navbar-logo:hover {
@@ -54,8 +55,8 @@
 }
 
 .nav-links:hover {
-  background-color: #1888ff;
-  border-radius: 4px;
+  background-color: #fafbfc;
+  border-radius: 40px;
   transition: all 0.2s ease-out;
 }
 
@@ -76,13 +77,19 @@
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+.nav-log {
+  text-align: end;
+}
+
+@media screen and (max-width: 560px) {
   .navbar {
     text-align: right;
   }
-  .NavbarItems {
-    position: relative;
+
+  .nav-item {
+    display: none;
   }
+  
 
   .nav-menu {
     display: flex;
@@ -113,25 +120,27 @@
   }
 
   .nav-links:hover {
-    background-color: #f2f4f7;
-    border-radius: 0;
+    background-color: #fbfcfd;
+  border-radius: 40px;
+  transition: all 0.2s ease-out;
   }
 
   .nav-log{
     text-align: right;
     justify-content: right;
     display: flex;
-    align-items: center;
-    height: 80px;
-    margin-left: 30px;
+    left: 30px;
     font-weight: bold;
   }
 
   .navbar-logo {
-    position: inline-block;
-    top: 0;
-    left: 0;
-    transform: translate(15%, 25%);
+    color: black;
+    justify-self: start;
+    margin-left: 0px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 3rem;
+    
   }
 
 

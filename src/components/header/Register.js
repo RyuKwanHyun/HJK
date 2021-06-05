@@ -5,7 +5,7 @@ import axios from 'axios';
 
 
 function RegisterForm() {
-  
+
 
   const [signUpCheck, setSignUpCheck] = useState('');
   const [email, setEmail] = useState('');
@@ -69,14 +69,14 @@ function RegisterForm() {
     const postUser = async () => {
       try {
 
-         await axios.post(
+        await axios.post(
           '/api/v1/members/signup', {
           name: email,
           password: password
         }
         );
-        
-    
+
+
 
         console.log("Success");
         //history.pushState('/');
@@ -87,47 +87,47 @@ function RegisterForm() {
     }
 
     postUser(
-      
+
     );
   }
 
   return (
-    <div className = "register_main_body">
-      <div className = "register_title">
-            Sign Up
-            </div>
-            <div className = "register_form">
-                <form className = "signup_form" onSubmit = {onSubmitHandler}>
-                    <legend><span className = "base">!</span>Your basic info</legend>
-                    <label for = "mail">Email:</label>
-                    <input type = "email" id = "mail" name = "user_email" value = {email} onChange = {onChangeEmail}></input>
-                    
-                    <label for = "password">Password:</label>
-                    <input type = "password" id = "password" name = "user_password" 
-                            value = {password} onChange = {onChangePassword}></input>
+    <div className="register_main_body">
+      <div className="register_title">
+        Sign Up
+      </div>
+      <div className="register_form">
+        <form className="signup_form" onSubmit={onSubmitHandler}>
+          <legend><span className="base">!</span>Your basic info</legend>
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email" value={email} onChange={onChangeEmail}></input>
 
-                    <label for = "passwordCheck">PasswordCheck:</label>
-                    <input type = "password" id = "passwordCheck" name = "user_password_check" 
-                            value = {passwordconfirm} onChange = {onChangePasswordConfirm}></input>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="user_password"
+            value={password} onChange={onChangePassword}></input>
 
-                    <label for = "name">Full Name:</label>
-                    <input type = "text" id = "name" name = "user_name" 
-                            value = {name} onChange = {onChangeName}></input>
+          <label for="passwordCheck">PasswordCheck:</label>
+          <input type="password" id="passwordCheck" name="user_password_check"
+            value={passwordconfirm} onChange={onChangePasswordConfirm}></input>
 
-                    <label for = "phonenum1">Telephone:</label>
-                    <input type = "text" id = "phonenum1" name = "user_phone_num1" 
-                            value = {phonenum1} onChange = {onChangePhoneNum1}></input>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="user_name"
+            value={name} onChange={onChangeName}></input>
 
-                    {/* <label for = "address">Address:</label>
+          <label for="phonenum1">Telephone:</label>
+          <input type="text" id="phonenum1" name="user_phone_num1"
+            value={phonenum1} onChange={onChangePhoneNum1}></input>
+
+          {/* <label for = "address">Address:</label>
                     <input type = "text" id = "address" name = "user_address" 
                     ></input> */}
-                    
-                    <button className = "register_submit_button" type = "submit" onClick = {onSubmit}>Sign Up</button>
-                    {signUpCheck && (<Redirect to = "/Login"></Redirect>)}
-                    
-                </form>
-            </div>
-        </div>
+
+          <button className="register_submit_button" type="submit" onClick={onSubmit}>Sign Up</button>
+          {signUpCheck && (<Redirect to="/Login"></Redirect>)}
+
+        </form>
+      </div>
+    </div>
   );
 }
 

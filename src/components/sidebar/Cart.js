@@ -48,7 +48,7 @@ const Cart = () => {
                     <p>{getCartSubTotal()}￦</p>
                 </div>
                 <div className = "checkout_btn">
-                    <Link to = "/paymenthome">
+                    <Link to = "/payment">
                     <button>Proceed To Checkout</button>
                     </Link>
                 </div>

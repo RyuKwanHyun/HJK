@@ -94,6 +94,7 @@ export const SidebarData = [
   //   path: '/support',
   //   icon: <IoIcons.IoMdHelpCircle />
   // },
+  
   {
     title: 'CART',
     path: '/cart',

@@ -8,15 +8,16 @@ import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
 
 const Nav = styled.div`
-  background: #15171c;
+  
+  background: transperant;
   height: 80px;
+  position: left;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: left;
 `;
 
 const NavIcon = styled(Link)`
-  margin-left: 2rem;
   font-size: 2rem;
   height: 80px;
   display: flex;
@@ -49,10 +50,10 @@ const Sidebar = () => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff' }}>
+      <IconContext.Provider value={{ color: '#fff' }}/>
         <Nav>
-          <NavIcon to='#'>
-            <FaIcons.FaBars onClick={showSidebar} />
+          <NavIcon to='#' >
+            <FaIcons.FaShoppingCart onClick={showSidebar} />
           </NavIcon>
         </Nav>
         <SidebarNav sidebar={sidebar}>
@@ -65,7 +66,6 @@ const Sidebar = () => {
             })}
           </SidebarWrap>
         </SidebarNav>
-      </IconContext.Provider>
     </>
   );
 };

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Sidebar from '../sidebar/Sidebar';
 import './Navbar.css';
 
 function Navbar() {
@@ -16,6 +17,9 @@ function Navbar() {
   return (
     <>
       <div className='navbar'>
+        <div className="sidebar_icon">
+          <Sidebar />
+        </div>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
           REP1ER
           {/* <i className='fab fa-firstdraft' /> */}
@@ -46,7 +50,7 @@ function Navbar() {
               CONTACT US
             </Link>
           </div>
-          <div className='nav-item'>
+          {/* <div className='nav-item'>
             <Link
               to='/MyAccount'
               className='nav-links'
@@ -54,7 +58,7 @@ function Navbar() {
             >
               MY ACCOUNT
             </Link>
-          </div>
+          </div> */}
 
         </div>
 
